@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Scorekeeper</title>
+		<link rel="stylesheet" href="mystyle.css">
+	</head>
+	<body>
+		<h1>Ping Pong Scorekeeper</h1>
+		<img src="imgs/pingpong.jpg" alt="">
+		<h2><span id="playerone">0</span> to <span id="playertwo">0</span></h2>
+		<p>Use the buttons below to keep score.</p>
+		<form action="/nowhere">
+			<label for="maxscore">Playing to: </label>
+			<select name="max" id="maxscore">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5" selected>5</option>
+			</select>
+		</form>
+		<div class="controls">
+			<button id="scoreone">+1 Player One</button>
+			<button id="scoretwo">+1 Player Two</button>
+			<button id="reset">Reset</button>
+		</div>
+		<p id="credit"><span>Photo by <a href="https://unsplash.com/@keepsakes_and_daydreams?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Steven Skerritt</a> on <a href="https://unsplash.com/s/photos/ping-pong?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+		
+		<script src="scorekeeper.js"></script>
+	</body>
+</html>
